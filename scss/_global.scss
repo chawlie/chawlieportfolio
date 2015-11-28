@@ -1,0 +1,41 @@
+.button {
+    border-radius: 5px;
+    background-color: $red;
+    font-family: "source-sans-pro", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+
+    @media #{$medium-only} {
+        font-size: 20px;
+    }
+    @media #{$small-only} {
+        font-size: 18px;
+        padding: 1rem 1rem 1.0625rem 1rem;
+    }
+
+    &.button-blue {
+        background-color: $blue;
+    }
+}
+
+a:hover.button.button-blue {
+    background-color: $red;
+}
+
+a:hover.button.button-red {
+    background-color: $blue;
+}
+
+.reveal-modal .close-reveal-modal {
+    background-color: #fff;
+    padding: 0px 10px 10px;
+}
+
+.reveal-modal-bg {
+  background: rgba(0,0,0,0.9);
+}
+
+.my-modal{
+    position: relative !important;
+}

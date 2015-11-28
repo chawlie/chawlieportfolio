@@ -1,0 +1,30 @@
+.primary-nav {
+
+    ul {
+        list-type: none;
+
+        li {
+            display: inline-block;
+            margin-top: 20px;
+
+            a {
+                font-size: 30px;
+                color: $medium-gray;
+                padding: 0 30px;
+                font-weight: bold;
+
+                @media #{$medium-only} {
+                    padding: 0 10px;
+                }
+
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+    }
+}
+
+.primary-logo {
+    padding: 20px 0;
+}
